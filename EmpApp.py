@@ -33,10 +33,10 @@ def about():
 
 @app.route("/addemp", methods=['POST'])
 def AddEmp():
-    emp_id = request.form['emp_id']
+    empid = request.form['emp_id']
     first_name = request.form['first_name']
     last_name = request.form['last_name']
-    pri_skill = request.form['pri_skill']
+    skills = request.form['pri_skill']
     location = request.form['location']
     emp_image_file = request.files['emp_image_file']
 
